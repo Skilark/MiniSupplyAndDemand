@@ -1,0 +1,7 @@
+/* pages/about/about.wxss */
+.aboutus{
+  display: flex;
+  align-items: center;
+  color: #696969;
+  margin-top: 30%;
+}

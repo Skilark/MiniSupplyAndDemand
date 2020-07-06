@@ -1,0 +1,7 @@
+<!--pages/about/about.wxml-->
+<view class="container">
+  <view class="aboutus">
+    这里是ysh的暑期实训项目
+  </view>
+  <view style="color:#696969">@2020</view>
+</view>

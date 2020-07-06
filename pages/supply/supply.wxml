@@ -1,0 +1,49 @@
+<!--pages/supply/supply.wxml-->
+<view class='page_row'>  
+    <!-- <view class="search">   -->
+      <view class="df search_arr">  
+        <icon class="searchcion" size='28' type='search' bindtap="handleSearch" color="#D46823"></icon>  
+        <input class="" placeholder="请输入关键字" value="{{searchValue}}"/>  
+      </view>  
+    <!-- </view> -->
+</view> 
+<view class="sort">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+  <view class="sortIcons">
+    <image src="../../assets/images/reviewIcon.jpg" class="img1" bindtap="handleReviewClick"/>
+    <image src="../../assets/images/textbookIcon.jpg" class="img2" bindtap="handleTextbookClick"/>
+    <image src="../../assets/images/electricalIcon.jpg" class="img2" bindtap="handleElectricalClick"/>
+    <image src="../../assets/images/othersIcon.jpg" class="img2" bindtap="handleOthersClick"/>
+  </view>
+  <view class="sortTexts">
+    <view class="text1">复习资料</view>
+    <view class="text2">教辅教材</view>
+    <view class="text3">电器</view>
+    <view class="text4">其他</view>
+  </view>
+  <view class="divLine2"></view>
+</view>
+<view class="imagineText"> 猜你想要 </view> 
+<!-- 假的商品列表示例 -->
+<view class="goodsView">
+  <!--之后用vx:for从数据库里读出显示-->
+  <view class="goodView" bindtap="handleGoodClick">
+    <image src="../../assets/example/e1.jpg" class="imgView"/>
+    <view class="textView">
+      <view style="font-weight:bold;font-family=SimHei;font-size:12pt;color:#696969">高等数学学习指南(上)</view> <!-- {{item.title}} -->
+      <view class="infoRow">
+        <image src="../../assets/images/qualityIcon.png" style="margin-top:6%;width:40rpx;height:40rpx"/>
+        <view style="margin-top:8%;margin-left:3%;font-size:10pt;color:#696969">8成新</view> <!-- {{item.几成新}} -->
+      </view>
+      <view class="infoRow">
+        <image src="../../assets/images/locationIcon.png" style="margin-top:5%;width:40rpx;height:40rpx"/>
+        <view style="margin-top:6%;margin-left:3%;font-size:10pt;color:#696969">信息学部</view> <!-- {{item.location}} -->
+      </view>
+      <view class="infoRow">
+        <view style="margin-top:10%;font-size:15pt;color:#D46823">¥</view>
+        <view style="margin-top:10%;font-size:15pt;color:#D46823;margin-left:2%">10</view> <!-- {{item.price}} -->
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,20 @@
+<!--pages/supplier/supplier.wxml-->
+<view class="supplierinfo">
+  <image src="../../assets/example/supplierimage.jpg" style="width:80rpx;height:80rpx;border-radius:50%;margin-left:2%;margin-top:2%"/>
+  <view style="color:#696969;margin-left:4%;margin-top:2%">供应者昵称</view>  <!--{{供应者昵称}}-->
+</view>
+
+<view class="divLine"/>
+<view style="margin-left:4%;color:#D46823;margin-top:4%;">TA的交易</view>
+<view class="infoRow">
+  <view class="suppliesView" bindtap="hisSupplyClick">
+    <view style="margin-left: 25%;font-size:40pt;">1</view>  <!--{{供应数量}}-->
+    <view style="font-size:10pt;">他的供应</view>
+  </view>
+  <image src="../../assets/images/line.png" style="width:20rpx;height:220rpx;margin-left:15%;"/>
+  <view class="demandView" bindtap="hisDemandClick">
+    <view style="margin-left: 25%;font-size:40pt;">1</view>  <!--{{供应数量}}-->
+    <view style="font-size:10pt;">他的需求</view>
+  </view>
+</view>
+<view class="divLine2"/>

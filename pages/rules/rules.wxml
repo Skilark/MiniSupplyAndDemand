@@ -1,0 +1,8 @@
+<!--pages/rules/rules.wxml-->
+<view class="container">
+  <view class="rules">
+    <view>请在付款询问商品是否还未售出</view>
+    <view>已售出商品请及时下架</view>
+    <view>需求交易需在双方联系下进行</view>
+  </view>
+</view>

@@ -1,0 +1,131 @@
+/* pages/supply/supply.wxss */
+/*搜索框一行*/
+.search_arr {  
+  border: 1px solid #D46823;  
+  border-radius: 20rpx;   /*圆角边框*/
+  margin-left: 30rpx;
+  margin-top: 20px;  
+}  
+.search_arr input{  
+  margin-left: 30rpx;
+  height: 80rpx;
+  width: 600rpx;  
+  /* border-radius: 5px;   */
+}  
+.bc_text {  
+  line-height: 68rpx;  
+  height: 68rpx;  
+  margin-top: 34rpx;  
+}  
+.page_row{  
+  display: flex;  
+  flex-direction: row  
+}  
+.searchcion {  
+      margin: 18rpx 20rpx 20rpx 20rpx;  
+      position: absolute;  
+      left:645rpx;  
+      z-index: 2;  
+      width: 40px;  
+      height: 40px;  
+      text-align: center;  
+}  
+
+/* 横着的分割View样式 */
+/*分割线样式*/
+.sort{
+  margin-top: 20rpx;
+}
+.divLine{
+ background: #E0E3DA;
+ width: 92%;
+ margin-left: 4%;
+ height: 5rpx;
+}
+.divLine2{
+ background: #E0E3DA;
+ width: 92%;
+ height: 5rpx;
+ margin-top: 20rpx;
+ margin-left: 4%;
+}
+.imagineText{
+  font-family: SimHei;
+  font-weight: bold;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+/*选择分类的一行，图片以及文字描述*/
+.sortIcons{
+  display: flex;  
+  flex-direction: row
+}
+.img1{
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 8%;
+}
+.img2{
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 2%;
+}
+.sortTexts{
+  display: flex;  
+  flex-direction: row
+}
+.text1{
+  color: #696969;
+  font-size: 10pt;
+  margin-left: 11%;
+}
+.text2{
+  color: #696969;
+  font-size: 10pt;
+  margin-left: 9%;
+}
+.text3{
+  color: #696969;
+  font-size: 10pt;
+  margin-left: 12%;
+}
+.text4{
+  color: #696969;
+  font-size: 10pt;
+  margin-left: 16%;
+}
+/*商品层*/
+.goodsView{
+  margin-top: 5%;
+}
+/*商品层，这里是一个个的商品，在wxml中用wx：for列举（大概）*/
+.goodView{
+  border: 1px solid #DCDCDC;  
+  box-shadow:0px 2px 4px 2px #DDDDDD; /*阴影效果*/
+  border-radius: 20rpx;   /*圆角边框*/
+  width: 91%;
+  height: 250rpx;
+  margin-left: 4%;
+  /* background: #F5F5F5; */
+  /*横排，左边图片右边文字描述*/
+  display: flex;  
+  flex-direction: row
+}
+/*左侧图片*/
+.imgView{
+  width: 180rpx;
+  height: 220rpx;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-radius: 10rpx;
+}
+/*右侧文字，文字竖着排列*/
+.textView{
+  margin-left: 4%;
+  margin-top: 2%;
+}
+/*文字中几成新、位置、价格又需要横排*/
+.infoRow{
+  display: flex;  
+  flex-direction: row
+}

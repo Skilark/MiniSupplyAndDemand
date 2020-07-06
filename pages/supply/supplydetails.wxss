@@ -1,0 +1,63 @@
+/* pages/supply/supplydetails.wxss */
+/*供应者信息*/
+.supplierinfo{
+  border: 1px solid #DCDCDC;  
+  box-shadow:0px 2px 4px 2px #DDDDDD; /*阴影效果*/
+  border-radius: 25rpx;   /*圆角边框*/
+  width: 91%;
+  height: 110rpx;
+  margin-left: 4%;
+  margin-top: 3%;
+  /* background: #F5F5F5; */
+  /*横排，左边头像图片右边供应者名称*/
+  display: flex;  
+  flex-direction: row
+}
+/*价格及自提还是送货上门*/
+.price{
+  display: flex;  
+  flex-direction: row
+}
+/*商品情况*/
+.goodDetail{
+  border: 1px solid #DCDCDC;  
+  box-shadow:0px 2px 4px 2px #DDDDDD; /*阴影效果*/
+  border-radius: 25rpx;   /*圆角边框*/
+  width: 91%;
+  height: 150rpx;
+  margin-left: 4%;
+  margin-top: 3%;
+}
+.goodDiscription{
+  border: 1px solid #DCDCDC;  
+  box-shadow:0px 2px 4px 2px #DDDDDD; /*阴影效果*/
+  border-radius: 25rpx;   /*圆角边框*/
+  width: 91%;
+  height: 230rpx;
+  margin-left: 4%;
+  margin-top: 1%;
+}
+.btnView{
+  display: flex;  
+  flex-direction: row;
+  width: 50%;
+  margin-left: 45%;
+  margin-top: 4%;
+}
+.btn1{
+  border:1px solid #DCDCDC;
+  box-shadow:0px 2px 4px 2px #DDDDDD;
+  border-radius:25rpx;
+  background-color:#71A422;
+  color:white;
+  height: 80rpx;
+}
+.btn2{
+  border:1px solid #DCDCDC;
+  box-shadow:0px 2px 4px 2px #DDDDDD;
+  border-radius:25rpx;
+  background-color:#D46823;
+  color:white;
+  height: 80rpx;
+  margin-left: 5%;
+}

@@ -1,0 +1,60 @@
+{
+  "pages":[
+    
+    
+    "pages/welcome/welcome",
+    "pages/demand/demanddetails",
+    "pages/demand/demand",
+    "pages/supply/supplydetails",
+    "pages/supply/supply",
+    "pages/mine/mine",
+    "pages/settings/settings",
+    "pages/rules/rules",
+    "pages/about/about",
+    "pages/categories/review/review",
+    "pages/categories/textbook/textbook",
+    "pages/categories/machine/machine",
+    "pages/categories/others/others",
+    "pages/mythings/mysupply/mysupply",
+    "pages/mythings/mydemand/mydemand",
+    "pages/mythings/mypurchase/mypurchase",
+    "pages/release/releasesupply/releasesupply",
+    "pages/release/releasedemand/releasedemand",
+    "pages/supplier/supplier",
+    "pages/his/hissupply/hissupply",
+    "pages/his/hisdemand/hisdemand",
+    "pages/index/index"
+    
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor":"#D46823",
+    "navigationBarTitleText": "武大供需",
+    "navigationBarTextStyle":"white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+    "selectedColor": "D46823",
+    "list": [{
+      "pagePath": "pages/supply/supply",
+      "text": "供应",
+      "iconPath": "assets/images/supply2.jpg",
+      "selectedIconPath": "assets/images/supply1.jpg"
+    },
+    {
+      "pagePath": "pages/demand/demand",
+      "text": "需求",
+      "iconPath": "assets/images/demand2.jpg",
+      "selectedIconPath": "assets/images/demand1.jpg"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "assets/images/mine2.jpg",
+      "selectedIconPath": "assets/images/mine1.jpg"
+    }]
+  }
+}

@@ -1,0 +1,8 @@
+/* pages/rules/rules.wxss */
+.rules{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #696969;
+  margin-top: 30%;
+}

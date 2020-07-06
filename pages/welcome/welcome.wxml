@@ -1,0 +1,6 @@
+<!--pages/welcome/welcome.wxml-->
+
+<view class="container">
+  <image src='../../assets/images/welcome.jpg'></image>
+  <button bindtap="jumpPage">开始</button>
+</view>

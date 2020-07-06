@@ -1,0 +1,24 @@
+<!--pages/categories/textbook/textbook.wxml-->
+<!-- 假的商品列表示例 -->
+<view class="goodsView">
+  <!--之后用vx:for从数据库里读出显示-->
+  <view class="goodView" bindtap="handleGoodClick">
+    <image src="../../../assets/example/e1.jpg" class="imgView"/>
+    <view class="textView">
+      <view style="font-weight:bold;font-family=SimHei;font-size:12pt;color:#696969">高等数学学习指南(上)</view> <!-- {{item.title}} -->
+      <view class="infoRow">
+        <image src="../../../assets/images/qualityIcon.png" style="margin-top:6%;width:40rpx;height:40rpx"/>
+        <view style="margin-top:8%;margin-left:3%;font-size:10pt;color:#696969">8成新</view> <!-- {{item.几成新}} -->
+      </view>
+      <view class="infoRow">
+        <image src="../../../assets/images/locationIcon.png" style="margin-top:5%;width:40rpx;height:40rpx"/>
+        <view style="margin-top:6%;margin-left:3%;font-size:10pt;color:#696969">信息学部</view> <!-- {{item.location}} -->
+      </view>
+      <view class="infoRow">
+        <view style="margin-top:10%;font-size:15pt;color:#D46823">¥</view>
+        <view style="margin-top:10%;font-size:15pt;color:#D46823;margin-left:2%">10</view> <!-- {{item.price}} -->
+      </view>
+    </view>
+  </view>
+</view>
+

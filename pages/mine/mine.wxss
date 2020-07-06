@@ -1,0 +1,99 @@
+/* pages/mine/mine.wxss */
+/*用户信息栏*/
+.userinfo {
+  display: flex;
+  flex-direction: row;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  /* margin: 20rpx; */
+  margin-left: 8%;
+  margin-top: 8%;
+  border-radius: 50%;
+  border: 1px solid #DCDCDC;
+}
+.nicknameAndMottoView{
+  margin-left: 6%;
+  margin-top: 10%;
+}
+.userinfo-nickname {
+  color: #696969;
+  /* margin-left: 6%;
+  margin-top: 10%; */
+  font-size: 13pt;
+}
+.user-motto {
+  color: #696969;
+  margin-top: 15%;
+  font-size: 11pt;
+}
+
+/*我的导航栏*/
+.myThings{
+  margin-top: 40rpx;
+}
+.divLine{
+ background: #E0E3DA;
+ width: 92%;
+ margin-left: 4%;
+ height: 5rpx;
+}
+.divLine2{
+ background: #E0E3DA;
+ width: 92%;
+ height: 5rpx;
+ margin-top: 20rpx;
+ margin-left: 4%;
+}
+.myIcons{
+  display: flex;  
+  flex-direction: row
+}
+.img1{
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 7%;
+  margin-top: 1%;
+}
+.img2{
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 13%;
+  margin-top: 1%;
+}
+.myTexts{
+  display: flex;  
+  flex-direction: row
+}
+.text1{
+  color: #696969;
+  font-size: 10pt;
+  margin-left: 10%;
+}
+.text2{
+  color: #696969;
+  font-size: 10pt;
+  margin-left: 21%;
+}
+.text3{
+  color: #696969;
+  font-size: 10pt;
+  margin-left: 20%;
+}
+/*下方选项栏*/
+.selectBars{
+  margin-top: 10%;
+  margin-left: 4%;
+}
+.selectBar{
+  display: flex;  
+  flex-direction: row
+}
+.divLine3{
+  background: #E0E3DA;
+  width: 87%;
+  margin-left: 4%;
+  margin-top: 4%;
+  height: 3rpx;
+}

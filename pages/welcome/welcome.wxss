@@ -1,0 +1,19 @@
+/* pages/welcome/welcome.wxss */
+.container{
+  width: 100%;
+  height: 1300rpx;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+image{
+  position: absolute;
+  width: 100%;
+  height: 1300rpx;
+}
+button{
+  color: #D46823;
+  position: relative;
+  /* margin-top: 300px; */
+  margin-top: 120%;
+}

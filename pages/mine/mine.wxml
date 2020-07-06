@@ -1,0 +1,46 @@
+<!--pages/mine/mine.wxml-->
+
+<view class="userinfo">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <block wx:else>
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <view class="nicknameAndMottoView">
+      <view class="userinfo-nickname">{{userInfo.nickName}}</view>
+      <view class="user-motto">{{motto}}</view>
+    </view>
+  </block>
+</view>
+<!-- 导航栏 -->
+<view class="myThings">
+     <!-- 分割线 -->
+  <view class="divLine"></view>
+  <view class="myIcons">
+    <image src="../../assets/images/mySupply.jpg" class="img1" bindtap="handleSupplyClick"/>
+    <image src="../../assets/images/myDemand.jpg" class="img2" bindtap="handleDemandClick"/>
+    <image src="../../assets/images/myPurchase.jpg" class="img2" bindtap="handlePurchaseClick"/>
+  </view>
+  <view class="myTexts">
+    <view class="text1">我的供应</view>
+    <view class="text2">我的需求</view>
+    <view class="text3">我的买入</view>
+  </view>
+  <view class="divLine2"></view>
+</view>
+<!-- 下方选项栏 -->
+<view class="selectBars">
+  <view class="selectBar" bindtap="handleSettingClick">
+    <view style="color:#696969;font-size:13pt;margin-left:5%;">学生认证</view>
+    <image src="../../assets/images/settingIcon.jpg" style="width:40rpx;height:40rpx;margin-left:62%"/>
+  </view>
+  <view class="divLine3"></view>
+  <view class="selectBar" bindtap="handleRulesClick">
+    <view style="color:#696969;font-size:13pt;margin-left:5%;margin-top:4%">平台规则</view>
+    <image src="../../assets/images/ruleIcon.jpg" style="width:40rpx;height:40rpx;margin-left:62%;margin-top:4%"/>
+  </view>
+  <view class="divLine3"></view>
+  <view class="selectBar" bindtap="handleAboutUsClick">
+    <view style="color:#696969;font-size:13pt;margin-left:5%;margin-top:4%">关于我们</view>
+    <image src="../../assets/images/usIcon.jpg" style="width:40rpx;height:40rpx;margin-left:62%;margin-top:4%"/>
+  </view>
+  <view class="divLine3"></view>
+</view>

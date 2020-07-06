@@ -1,0 +1,20 @@
+<!--pages/demand/demanddetails.wxml-->
+<view class="supplierinfo" bindtap="handleSupplierClick">
+  <image src="../../assets/example/supplierimage.jpg" style="width:80rpx;height:80rpx;border-radius:50%;margin-left:2%;margin-top:2%"/>
+  <view style="color:#696969;margin-left:4%;margin-top:2%">供应者昵称</view>  <!--{{供应者昵称}}-->
+</view>
+
+<view class="price">
+  <view style="color:#D46823;font-size:18pt;font-weight:bold;margin-left:5%;margin-top:3%;font-family:SimHei">¥</view>
+  <view style="color:#D46823;font-size:18pt;font-weight:bold;margin-left:2%;margin-top:3%;font-family:SimHei">10</view>   <!--{{price}}-->
+  <image src="../../assets/images/locationIcon2.jpg" style="width:35rpx;height:35rpx;margin-left:58%;margin-top:5%" />
+  <view style="color:#D46823;font-size:10pt;font-weight:bold;margin-left:2%;margin-top:5%;font-family:SimHei">信息学部</view>    <!--{{取货方式}}-->
+</view>
+<image src="../../assets/example/e1.jpg" style="width:280rpx;height:360rpx;border-radius:10%;margin-left:31%;margin-top:4%"/>
+
+<view style="color:#D46823;font-size:12pt;margin-left:5%;margin-top:3%;font-family:SimHei">需求描述</view>
+<view class="goodDiscription">
+  <view style="color:#696969;margin-left:4%;margin-top:2%">blablablabla</view>
+</view>
+
+<button class="btn" bindtap="handleChatBtnClick">聊一聊</button>

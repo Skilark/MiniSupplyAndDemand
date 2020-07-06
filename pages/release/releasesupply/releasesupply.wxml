@@ -1,0 +1,67 @@
+<!--pages/release/releasesupply/releasesupply.wxml-->
+<!--注意：form中每个控件都需要添加name属性，否则找不到对应控件的值-->
+<form class="formView" bindsubmit="formSubmit" bindreset="formReset">
+  <view style="color:#D46823;margin-left:3%;margin-top:2%;font-size:13pt">基本信息</view>
+  <view class="rowInfo">
+    <view>商品名</view>
+    <input name="inputName" style="margin-left:16%" placeholder="请输入商品名"/>  
+  </view>
+  <view class="divLine"/>
+  <view class="rowInfo">
+    <view>品相</view>
+    <picker name="qualityPicker" bindchange="bindQualityChange" value="{{index}}" range="{{qualityArray}}" style="margin-left:21%;width:200px">
+      <view style="color:#696969"> 当前选择：{{qualityArray[index]}}</view>
+    </picker> 
+  </view>
+  <view class="divLine"/>
+  <view class="rowInfo">
+    <view>类型</view>
+    <picker name="typePicker" bindchange="bindTypeChange" value="{{index2}}" range="{{typeArray}}" style="margin-left:21%;width:200px">
+      <view style="color:#696969"> 当前选择：{{typeArray[index2]}}</view>
+    </picker> 
+  </view>
+  <view class="divLine"/>
+  <view class="rowInfo">
+    <view>商品位置</view>
+    <picker name="locationPicker" bindchange="bindLocationChange" value="{{index3}}" range="{{locationArray}}" style="margin-left:13%;width:200px">
+      <view style="color:#696969"> 当前选择：{{locationArray[index3]}}</view>
+    </picker> 
+  </view>
+  <view class="divLine"/>
+  <view class="rowInfo">
+    <view>取货方式</view>
+    <picker name="wayPicker" bindchange="bindWayChange" value="{{index4}}" range="{{wayArray}}" style="margin-left:13%;width:200px">
+      <view style="color:#696969"> 当前选择：{{wayArray[index4]}}</view>
+    </picker> 
+  </view>
+  <view class="divLine"/>
+  <view class="rowInfo">
+    <view>价格</view>
+    <view style="color:#696969;margin-left:22%">¥</view>
+    <input name="inputPrice" style="margin-left:2%;color:#696969"/>  
+  </view>
+  <view class="divLine"/>
+
+  <view style="color:#D46823;margin-left:3%;margin-top:5%;font-size:13pt">商品描述</view>
+  <textarea name="discriptionTextarea" style="border:1px solid #696969;border-radius: 20rpx;margin-left:8%;margin-top:3%;width:82%;color:#696969"></textarea>
+
+  <view style="color:#D46823;margin-left:3%;margin-top:5%;font-size:13pt">添加照片</view>
+  <!-- 容器 -->
+  <view class='ui_uploader_cell'>
+      <!-- 根据已选择的图片临时路径数组展示图片-->
+      <view class='ui_uploader_item' wx:for="{{uploaderList}}" wx:key="{{index}}">
+          <!-- 删除-->
+          <icon class='ui_uploader_item_icon' bindtap='clearImg' data-index="{{index}}" type="clear" size="20" color="red"/>
+          <!-- 图片-->
+          <image bindtap='showImg' data-index="{{index}}" src='{{item}}'></image>
+      </view>
+      <!-- 上传按钮+框 -->
+      <view class='ui_uploader' bindtap='upload' wx:if="{{showUpload}}"></view>
+  </view>
+
+  <view class="btn-area">
+      <button form-type="submit" class="submitBtn">发布</button>
+      <button form-type="reset" class="resetBtn">重置</button>
+  </view>
+  
+</form>

@@ -1,0 +1,18 @@
+<!--pages/settings/settings.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="settingView">
+    <view class="infoRow">
+      <view style="margin-left:15%;margin-top:10%;">姓名</view>
+      <input name="inputName" style="margin-left:16%;margin-top:10%;width:150px;" placeholder="请输入姓名"/>  
+    </view>
+    <view class="divLine"/>
+    <view class="infoRow">
+      <view style="margin-left:15%;margin-top:10%;">学号</view>
+      <input name="inputStuNumber" style="margin-left:16%;margin-top:10%;width:150px;" placeholder="请输入学号"/>  
+    </view>
+  </view>
+  <view class="btn-area">
+      <button form-type="submit" class="submitBtn">提交</button>
+      <button form-type="reset" class="resetBtn">重置</button>
+    </view>
+</form>
